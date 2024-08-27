@@ -1,0 +1,75 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+#skills-sec{
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+/*	align-items: center;*/
+	flex-direction: column;
+	background-color: red; 
+  background-image: linear-gradient( #F5F5DC,#FFB000);
+
+}
+#skills-sec h1{
+	text-align: center;
+	padding-bottom: 50px;
+}
+#skills-sec-items
+{
+	display: flex;
+	justify-content: center;
+/*	align-items: center;*/
+	flex-direction: column;
+	gap: 10px;
+/*	width: 50%;*/
+}
+
+#skills-sec-items div:nth-child(n)
+{	
+	margin-top: 10px;
+	height:50px;
+	width: 50%;
+	font-weight: bold;
+	background-color: white;
+	
+
+}
+#skills-sec-items span
+{
+	color: red;
+	float: right;
+	justify-content: center;
+}
+#c{
+	background: linear-gradient(to right, yellow 70% ,white 30%);
+}
+#cpp{
+	background: linear-gradient(to right, blue 60% ,white 40%);
+}
+#java{
+	background: linear-gradient(to right, red 80% ,white 20%);
+}
+#python{
+	background: linear-gradient(to right,#891652 70% ,white 30%);
+}
+#webdevelopment{
+	background: linear-gradient(to right, orange 90% ,white 10%);
+}
+@media screen and (min-width:320px) and (max-width:576px)
+{
+	#skills-sec-items
+	{
+		margin-left: 20px;
+	}
+	#skills-sec-items div:nth-child(n)
+	{
+		height: 30px;
+		width: 80%;
+	}
+}

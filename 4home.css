@@ -1,0 +1,161 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	
+}
+
+#navbar {
+  overflow: hidden;
+/*  background-color: #AAC4FF;*/
+background-color: rgba(0, 0, 0, 0.3); 
+  backdrop-filter: blur(10px);
+}
+
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+}
+
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+#navbar-items a:hover
+{
+	background-color:#3AB0FF ;
+	border-radius: 10px;
+	color: white;
+
+}
+@media screen and (min-width:320px) and (max-width:800px)
+{
+	#navbar a
+	{
+		padding: 5px; 
+	}
+	#navbar-items
+	{
+		padding: 5px;
+	}
+	#home-icons{
+		gap: 10px;
+	}
+}
+
+main{
+	background-color: whitesmoke;
+}
+
+#home-sec{
+	height: 100vh;
+	width: 100%;
+	background-color: red; 
+  background-image: linear-gradient( #3AB0FF,#F87474);
+
+
+}
+
+span{
+	color: orange;
+}
+
+#home-icons{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	
+	gap: 50px;
+}
+
+#home-sec{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	gap: 100px;
+}
+#names h1 {
+    font-size: 2.5em;
+    animation: hari 2.5s ease-in-out infinite;
+}
+
+
+@keyframes hari {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#names p {
+    font-size: 1.2em;
+}
+ img{
+	border-radius: 10%;
+	height: 250px;
+	width: 250px;
+}
+
+@media screen and (min-width:320px) and (max-width: 800px) {
+    #home-sec
+     {
+        /*display: grid;
+        grid-template-columns: 1fr;
+        gap:0px;*/
+        flex-direction: column-reverse;
+    }
+
+
+    img {
+        height: 250px;
+        width: 40%;
+
+        object-fit: cover;
+/*        margin: 0 auto; */
+margin-left: 100px;
+
+    }
+
+    #names {
+        text-align: center; 
+        
+    }
+
+    #names h1 {
+        font-size: 2em; 
+    }
+
+    #names p {
+        font-size: 1em; 
+        padding: 0px 10px; 
+    }
+    #home-icons{
+    	display: flex;
+    	font-size: 10px;
+    	align-items: center;
+    	justify-content: center;
+    }
+  }

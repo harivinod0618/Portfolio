@@ -1,0 +1,170 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+#project-sec
+{
+	height: 100vh;
+	width: 100%;
+/*	padding: 40px 0;*/
+padding-top: 60px;
+
+    background: #cddfe6;
+    margin: 10px;
+    display: grid;
+    background-color: red; 
+  background-image: linear-gradient( #FF6969,#F1B4BB);
+  
+
+}
+
+#project-sec h1{
+	text-align: center;
+}
+
+#project-sec .project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding-left: 20px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+#project-sec .project {
+    background: #e8c5ee;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 350px;
+}
+
+#project-sec .project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#project-sec .project img {
+	height:50%;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+#project-sec .project img:hover {
+    transform: scale(1.05);
+}
+
+#project-sec .project h3 {
+    margin: 15px 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+#project-sec .project p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+#project-sec .project a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.9s ease;
+}
+
+#project-sec .project a:hover {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+/*@media screen and (max-width: 1000px) {
+    #project-sec {
+        padding-top: 40px;
+        margin: 0;
+        height: auto;
+    }
+
+    #project-sec .project-list {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    #project-sec .project {
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    #project-sec .project img {
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    #project-sec .project h3 {
+        font-size: 1.2em;
+        margin: 10px 0;
+    }
+
+    #project-sec .project p {
+        font-size: 0.9em;
+    }
+
+    #project-sec .project a {
+        font-size: 0.9em;
+        padding: 8px 12px;
+    }
+}*/
+
+@media screen and (min-width:320px) and (max-width: 1400px) {
+    #project-sec {
+/*        padding-top: 40px;*/
+        margin: 0;
+        height: 160vh;
+    }
+
+    #project-sec .project-list {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin-bottom: 100px;
+        place-items: center;
+    }
+
+    #project-sec .project {
+/*        padding: 5px;*/
+        width: 70%;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    }
+
+    #project-sec .project img {
+        height: auto;
+        width: 50%;
+        margin-bottom: 10px;
+        margin-left: 10px;
+
+    }
+
+    #project-sec .project h3 {
+        font-size: 1.3em;
+        margin: 10px 0;
+    }
+
+    #project-sec .project p {
+        font-size: 0.9em;
+        margin-bottom: 10px;
+    }
+
+    #project-sec .project a {
+        font-size: 0.9em;
+        padding: 8px 12px;
+    }
+}
